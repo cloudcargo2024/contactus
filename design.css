@@ -73,7 +73,7 @@ body {
 /* Fixed and Centered Social Media Icons */
 .social-icons {
     position: fixed; /* Fixes the icons to the viewport */
-    top: 50%; /* Positions the icons vertically in the middle */
+    top: 70%; /* Positions the icons vertically in the middle */
     left: 50%; /* Positions the icons horizontally in the middle */
     transform: translate(-50%, -50%); /* Centers the icons exactly */
     display: flex;
