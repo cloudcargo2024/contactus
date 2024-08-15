@@ -16,7 +16,7 @@
     color: #f5f5f5;
     cursor: pointer;
     outline: none;
-    z-index: 4; /* Above social icons */
+    z-index: 5; /* Above social icons */
 }
 
 .btn:hover {
@@ -94,7 +94,7 @@ body {
 /* Text above the icons */
 .social-text {
     color: white;
-    font-size: 40px; /* Adjust size as needed */
+    font-size: 70px; /* Adjust size as needed */
     text-align: center;
     margin-bottom: 20px; /* Space between text and icons */
     z-index: 4; /* Above social icons but below panel */
@@ -109,8 +109,8 @@ body {
 
 /* Style for individual social media icons */
 .social-icons a {
-    width: 90px; /* Circle size */
-    height: 90px; /* Circle size */
+    width: 100px; /* Circle size */
+    height: 100px; /* Circle size */
     border-radius: 50%; /* Makes the container a circle */
     display: flex;
     justify-content: center;
