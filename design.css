@@ -74,7 +74,7 @@ body {
 /* Container for social media icons and text */
 .social-container {
     position: fixed;
-    bottom: 400px; /* Adjust as needed */
+    bottom: 200px; /* Adjust as needed */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     display: flex;
@@ -88,7 +88,7 @@ body {
     color: white;
     font-size: 40px; /* Adjust size as needed */
     text-align: center;
-    margin-bottom: 100px; /* Increase space between text and icons */
+    margin-bottom: 70px; /* Increase space between text and icons */
 }
 
 /* Container for social media icons arranged horizontally */
