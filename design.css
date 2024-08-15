@@ -117,28 +117,39 @@ body {
 .social-container {
     position: fixed;
     bottom: 200px; /* Adjust as needed */
-    align-items: center; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2; /* Ensure it’s above other elements */
 }
 
+/* Text above the icons */
 .social-text {
     color: white;
-    font-size: 60px; /* Adjust size as needed */
+    font-size: 30px; /* Adjust size as needed */
     text-align: center;
-    margin-bottom: 10px; /* Adjust space between text and icons */
+    margin-bottom: 20px; /* Space between text and icons */
 }
 
+/* Container for social media icons arranged horizontally */
 .social-icons {
     display: flex;
-    gap: 10px; /* Space between icons */
+    gap: 20px; /* Space between icons */
 }
 
-.social-icons .fa {
-    font-size: 30px; /* Adjust size as needed */
-    padding: 10px;
-    border-radius: 50%;
-    color: white;
+/* Style for individual social media icons */
+.social-icons a {
+    width: 60px; /* Circle size */
+    height: 60px; /* Circle size */
+    border-radius: 50%; /* Makes the container a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; /* Icon size */
     text-decoration: none;
+    color: white;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
 }
