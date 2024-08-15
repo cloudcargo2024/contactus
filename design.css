@@ -62,24 +62,4 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-ul.social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
 
-ul.social-icons li {
-    margin: 0 10px;
-}
-
-ul.social-icons li a {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-}
-
-ul.social-icons li a svg:hover {
-    fill: #007BFF; /* Change color on hover */
-}
