@@ -4,21 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudCargo</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('4k-mountain-514o15v7mw0ycwpg.jpg'); /* Replace with the correct path */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh; /* Ensures the body takes up the full viewport height */
-            width: 100vw; /* Ensures the body takes up the full viewport width */
-        }
-    </style>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- Your existing content -->
     <h2>
         <button class="btn">
             <span class="icon">
@@ -41,6 +30,21 @@
         <p><a href="https://cloudcargo2024.github.io/contactus/">Contact us</a></p>
     </div>
 
+    <script>
+        var btn = document.querySelector('.btn');
+        var panel = document.querySelector('.panel');
+
+        btn.addEventListener('click', function() {
+            this.classList.toggle("active");
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    </script>
+
+    <!-- Fixed and Centered Social Media Icons -->
     <div class="social-icons">
         <a href="https://www.google.com/" class="fa fa-facebook"></a>
         <a href="https://www.google.com/" class="fa fa-linkedin"></a>
