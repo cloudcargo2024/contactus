@@ -61,7 +61,6 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    z-index: 2;
 }
 
 /* Background Image for Body */
@@ -75,13 +74,13 @@ body {
 /* Container for social media icons and text */
 .social-container {
     position: fixed;
-    bottom: 150px; /* Adjust as needed */
+    bottom: 150px; /* Adjust to position the container above the bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1; /* Ensure it’s above other elements */
+    z-index: 2; /* Ensure it’s above other elements */
 }
 
 /* Text above the icons */
