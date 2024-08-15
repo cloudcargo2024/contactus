@@ -57,7 +57,7 @@
 /* Panel Styles */
 .panel {
     padding: 0 18px;
-    background-color: rgba(32, 30, 67, 0.9); /* Semi-transparent background color */
+    background-color: #201E43; /* Original panel color */
     color: white;
     font-family: Verdana, Tahoma, sans-serif;
     max-height: 0;
