@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudCargo</title>
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h2>
@@ -21,7 +21,6 @@
     </h2>
 
     <div class="panel">
-        <p>-</p>
         <p><a href="https://cloudcargo2024.github.io/web/">Main page</a></p>
         <p><a href="https://cloudcargo2024.github.io/login/">Login</a></p>
         <p><a href="https://cloudcargo2024.github.io/products/">Products</a></p>
@@ -35,16 +34,13 @@
 
         btn.addEventListener('click', function() {
             this.classList.toggle("active");
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
+            panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
         });
     </script>
+
     <ul>
-    <li><a href="#"><i class="fa-brands fa-instagram instagram"></i></a></li>
-    <li><a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
-</ul>
+        <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+    </ul>
 </body>
 </html>
