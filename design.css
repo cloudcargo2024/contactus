@@ -82,43 +82,40 @@ body {
 /* Container for social media icons and text */
 .social-container {
     position: fixed;
-    bottom: 300px; /* Adjusted position to be higher on the screen */
+    bottom: 200px; /* Adjust as needed */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2; /* Below the panel */
-    width: 100%; /* Make sure it's responsive */
-    padding: 0 10px; /* Padding for smaller screens */
+    z-index: 3; /* Ensure it's below the panel */
 }
 
 /* Text above the icons */
 .social-text {
     color: white;
-    font-size: 30px; /* Adjusted size for better responsiveness */
+    font-size: 40px; /* Adjust size as needed */
     text-align: center;
     margin-bottom: 20px; /* Space between text and icons */
-    z-index: 3; /* Above social icons but below panel */
+    z-index: 4; /* Above social icons but below panel */
 }
 
 /* Container for social media icons arranged horizontally */
 .social-icons {
     display: flex;
-    gap: 15px; /* Space between icons */
+    gap: 20px; /* Space between icons */
     z-index: 2; /* Below text and panel */
-    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 /* Style for individual social media icons */
 .social-icons a {
-    width: 70px; /* Reduced circle size for better responsiveness */
-    height: 70px; /* Reduced circle size */
+    width: 90px; /* Circle size */
+    height: 90px; /* Circle size */
     border-radius: 50%; /* Makes the container a circle */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px; /* Adjusted icon size for responsiveness */
+    font-size: 30px; /* Icon size */
     text-decoration: none;
     color: white;
     transition: opacity 0.3s ease, box-shadow 0.3s ease;
@@ -145,19 +142,4 @@ body {
 /* Fade effect on hover for social media icons */
 .social-icons a:hover {
     opacity: 0.7;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .social-text {
-        font-size: 24px; /* Smaller text size on mobile */
-    }
-    .social-icons a {
-        width: 60px; /* Smaller icon size on mobile */
-        height: 60px; /* Smaller icon size on mobile */
-        font-size: 20px; /* Smaller icon font size */
-    }
-    .social-container {
-        bottom: 200px; /* Adjusted position for smaller screens */
-    }
 }
