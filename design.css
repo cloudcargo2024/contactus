@@ -1,130 +1,136 @@
 .btn {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    border: none;
-    margin: 0;
-    transition: all 0.5s ease-in-out;
-    font-size: 30px;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    background: #201E43;
-    color: #f5f5f5;
-    cursor: pointer;
-    outline: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  border: none;
+  margin: 0;
+  transition: all 0.5s ease-in-out;
+  font-size: 30px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #201E43;
+  color: #f5f5f5;
+  cursor: pointer;
+  outline: none;
+  z-index: 3; /* Ensure button is above other elements */
 }
 
 .btn:hover {
-    box-shadow: 0 0 20px 0px #201E43;
+  box-shadow: 0 0 20px 0px #201E43;
 }
 
 /* Icon inside Button */
 .btn .icon {
-    position: absolute;
-    width: 70px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
 }
 
 .btn:hover .icon {
-    width: 175px;
+  width: 175px;
 }
 
 /* Text inside Button */
 .btn .text {
-    transform: translateX(100px);
-    transition: all 0.5s;
+  transform: translateX(100px);
+  transition: all 0.5s;
 }
 
 .btn:hover .text {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* Button Active State */
 .btn:active .icon {
-    transform: scale(0.85);
+  transform: scale(0.85);
 }
 
 /* Panel Styles */
 .panel {
-    padding: 0 18px;
-    background-color: #201E43;
-    color: white;
-    font-family: Verdana, Tahoma, sans-serif;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+  padding: 0 18px;
+  background-color: #201E43;
+  color: white;
+  font-family: Verdana, Tahoma, sans-serif;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  position: fixed;
+  top: 70px; /* Adjust to be below the button */
+  left: 0;
+  width: 100%;
+  z-index: 4; /* Ensure panel is above the social text and icons */
 }
 
 /* Background Image for Body */
 body {
-    background-image: url('4k-mountain-514o15v7mw0ycwpg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-image: url('4k-mountain-514o15v7mw0ycwpg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Container for social media icons and text */
 .social-container {
-    position: fixed;
-    bottom: 150px; /* Adjust to position the container above the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 2; /* Ensure it’s above other elements */
+  position: fixed;
+  bottom: 270px; /* Adjust to position the container above the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2; /* Ensure it’s below the panel */
 }
 
 /* Text above the icons */
 .social-text {
-    color: white;
-    font-size: 40px; /* Adjust size as needed */
-    text-align: center;
-    margin-bottom: 20px; /* Space between text and icons */
+  color: rgb(255, 255, 255);
+  font-size: 40px; /* Adjust size as needed */
+  text-align: center;
+  margin-bottom: 40px; /* Space between text and icons */
 }
 
 /* Container for social media icons arranged horizontally */
 .social-icons {
-    display: flex;
-    gap: 20px; /* Space between icons */
+  display: flex;
+  gap: 20px; /* Space between icons */
 }
 
 /* Style for individual social media icons */
 .social-icons a {
-    width: 90px; /* Circle size */
-    height: 90px; /* Circle size */
-    border-radius: 50%; /* Makes the container a circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px; /* Icon size */
-    text-decoration: none;
-    color: white;
-    transition: opacity 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
+  width: 90px; /* Circle size */
+  height: 90px; /* Circle size */
+  border-radius: 50%; /* Makes the container a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px; /* Icon size */
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
 }
 
 /* Background Colors for Social Media Icons */
 .fa-facebook {
-    background-color: #3B5998; /* Facebook color */
+  background-color: #3B5998; /* Facebook color */
 }
 
 .fa-google {
-    background-color: #e54545; /* Google color */
+  background-color: #e54545; /* Google color */
 }
 
 .fa-linkedin {
-    background-color: #007bb5; /* LinkedIn color */
+  background-color: #007bb5; /* LinkedIn color */
 }
 
 .fa-instagram {
-    background-color: #E4405F; /* Instagram color */
+  background-color: #E4405F; /* Instagram color */
 }
