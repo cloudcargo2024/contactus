@@ -99,6 +99,12 @@
 .fa-linkedin {
     background-color: #007bb5; /* LinkedIn color */
 }
+body {
+    background-image: url('4k-mountain-514o15v7mw0ycwpg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 .fa-instagram {
     background-color: #E4405F; /* Instagram color */
