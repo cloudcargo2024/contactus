@@ -82,12 +82,12 @@
     border-radius: 50%;
     display: inline-block;
     line-height: 30px;
-    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.5s ease-in-out;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
 }
 
 .social-icons a:hover {
-    opacity: 0.7;
+    box-shadow: 0 0 20px 0px #201E43;
 }
 
 .fa-facebook {
