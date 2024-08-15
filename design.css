@@ -93,6 +93,7 @@ body {
     color: white;
     transition: opacity 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
+    z-index: 2;
 }
 
 .social-icons a:hover {
