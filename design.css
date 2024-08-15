@@ -114,3 +114,31 @@ body {
 .fa-instagram {
     background-color: #E4405F; /* Instagram color */
 }
+.social-container {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-text {
+    color: white;
+    font-size: 24px; /* Adjust size as needed */
+    text-align: center;
+    margin-bottom: 10px; /* Adjust space between text and icons */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.social-icons .fa {
+    font-size: 30px; /* Adjust size as needed */
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
