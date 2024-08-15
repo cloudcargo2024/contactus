@@ -1,123 +1,73 @@
-.btn {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    border: none;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    transition: all 0.5s ease-in-out;
-    font-size: 30px;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-weight: 600;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.btn {
     display: flex;
     align-items: center;
-    background: #201E43;
-    color: #f5f5f5;
+    background-color: #333;
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    outline: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 20px;
 }
 
-.btn:hover {
-    box-shadow: 0 0 20px 0px #201E43;
+.icon {
+    margin-right: 10px;
 }
 
-/* Icon inside Button */
-.btn .icon {
-    position: absolute;
-    width: 70px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-}
-
-.btn:hover .icon {
-    width: 175px;
-}
-
-/* Text inside Button */
-.btn .text {
-    transform: translateX(100px);
-    transition: all 0.5s;
-}
-
-.btn:hover .text {
-    opacity: 0;
-}
-
-/* Button Active State */
-.btn:active .icon {
-    transform: scale(0.85);
-}
-
-/* Panel Styles */
 .panel {
-    padding: 0 18px;
-    background-color: #201E43;
-    color: white;
-    font-family: Verdana, Tahoma, sans-serif;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-out;
+    background-color: #fff;
+    margin: 20px;
+    padding: 0 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-*{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #000;
-    }
+.panel p {
+    margin: 15px 0;
+}
 
-    ul {
-        position: relative;
-        display: flex;
-    }
-    ul li {
-        position: relative;
-        list-style: none;
-        margin: 0 20px;
-        cursor: pointer;
-    }
-    ul li a {
-        text-decoration: none;
-    }
-    ul li a .fa-brands {
-        font-size: 6em;
-        color: #222;
-    }
-    ul li a::before {
-        font-family: "FontAwesome";
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: 6em;
-        height: 0;
-        overflow: hidden;
-        transition: 0.5s ease-in-out;
-    }
+.panel a {
+    text-decoration: none;
+    color: #007BFF;
+}
 
-    ul li:nth-child(1) a::before {
-        content: "\f16d";
-        background-image: linear-gradient(45deg, 
-          #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,
-          #bc1888 100%);
-        -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
-        border-bottom: 4px solid #dc2743;
-    }
-    ul li:nth-child(2) a::before {
-        content: "\f232";
-        color: #25D366;
-        border-bottom: 4px solid #25D366;
-    }
-    ul li:hover a::before {
-        height: 100%;
-    }
+.panel a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li a {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+ul li a.instagram:hover {
+    color: #E4405F;
+}
+
+ul li a.whatsapp:hover {
+    color: #25D366;
+}
