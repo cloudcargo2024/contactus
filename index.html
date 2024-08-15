@@ -1,106 +1,54 @@
-.btn {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    border: none;
-    margin: 0;
-    transition: all 0.5s ease-in-out;
-    font-size: 30px;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    background: #201E43;
-    color: #f5f5f5;
-    cursor: pointer;
-    outline: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudCargo</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h2>
+        <button class="btn">
+            <span class="icon">
+                <svg viewBox="0 0 175 80" width="40" height="40">
+                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                </svg>
+            </span>
+            <span class="text">CloudCargo</span>
+        </button>
+    </h2>
 
-.btn:hover {
-    box-shadow: 0 0 20px 0px #201E43;
-}
+    <div class="panel">
+        <p>-</p>
+        <p><a href="https://cloudcargo2024.github.io/web/">Main page</a></p>
+        <p><a href="https://cloudcargo2024.github.io/login/">Login</a></p>
+        <p><a href="https://cloudcargo2024.github.io/products/">Products</a></p>
+        <p><a href="https://cloudcargo2024.github.io/sponsors/">Sponsors</a></p>
+        <p><a href="https://cloudcargo2024.github.io/contactus/">Contact us</a></p>
+    </div>
 
-/* Icon inside Button */
-.btn .icon {
-    position: absolute;
-    width: 70px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-}
+    <script>
+        var btn = document.querySelector('.btn');
+        var panel = document.querySelector('.panel');
 
-.btn:hover .icon {
-    width: 175px;
-}
+        btn.addEventListener('click', function() {
+            this.classList.toggle("active");
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    </script>
 
-/* Text inside Button */
-.btn .text {
-    transform: translateX(100px);
-    transition: all 0.5s;
-}
-
-.btn:hover .text {
-    opacity: 0;
-}
-
-/* Button Active State */
-.btn:active .icon {
-    transform: scale(0.85);
-}
-
-/* Panel Styles */
-.panel {
-    padding: 0 18px;
-    background-color: #201E43;
-    color: white;
-    font-family: Verdana, Tahoma, sans-serif;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-/* Centered Social Media Icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 70px); /* Adjusts for the height of the top button */
-}
-
-.social-icons a {
-    padding: 20px;
-    font-size: 30px;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    text-decoration: none;
-    margin: 10px;
-    border-radius: 50%;
-    display: inline-block;
-    line-height: 30px;
-    transition: opacity 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
-}
-
-.social-icons a:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background-color: #3B5998;
-    color: white;
-}
-
-.fa-linkedin {
-    background-color: #007bb5;
-    color: white;
-}
-
-.fa-instagram {
-    background-color: #E4405F;
-    color: white;
-}
+    <!-- Centered Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.google.com/" class="fa fa-facebook"></a>
+        <a href="https://www.google.com/" class="fa fa-linkedin"></a>
+        <a href="https://www.google.com/" class="fa fa-instagram"></a> 
+    </div>
+</body>
+</html>
