@@ -141,8 +141,8 @@ body {
 
 /* Style for individual social media icons */
 .social-icons a {
-    width: 60px; /* Circle size */
-    height: 60px; /* Circle size */
+    width: 90px; /* Circle size */
+    height: 90px; /* Circle size */
     border-radius: 50%; /* Makes the container a circle */
     display: flex;
     justify-content: center;
