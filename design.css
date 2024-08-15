@@ -57,7 +57,7 @@
 /* Panel Styles */
 .panel {
     padding: 0 18px;
-    background-color: #201E43;
+    background-color: #201E43; /* Original panel color */
     color: white;
     font-family: Verdana, Tahoma, sans-serif;
     max-height: 0;
@@ -68,7 +68,7 @@
     left: 0;
     width: 100%;
     z-index: 5; /* Above social icons and button */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for panel */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional shadow for panel */
 }
 
 /* Background Image for Body */
@@ -83,22 +83,22 @@ body {
 .social-container {
     position: fixed;
     bottom: 300px; /* Adjusted position to be higher on the screen */
-    left: 50%;
-    transform: translateX(-50%);
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 2; /* Below the panel */
-    width: 100%;
+    width: 100%; /* Make sure it's responsive */
     padding: 0 10px; /* Padding for smaller screens */
 }
 
 /* Text above the icons */
 .social-text {
     color: white;
-    font-size: 30px;
+    font-size: 30px; /* Adjusted size for better responsiveness */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Space between text and icons */
     z-index: 3; /* Above social icons but below panel */
 }
 
@@ -112,34 +112,34 @@ body {
 
 /* Style for individual social media icons */
 .social-icons a {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+    width: 70px; /* Reduced circle size for better responsiveness */
+    height: 70px; /* Reduced circle size */
+    border-radius: 50%; /* Makes the container a circle */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 24px; /* Adjusted icon size for responsiveness */
     text-decoration: none;
     color: white;
     transition: opacity 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
 }
 
 /* Background Colors for Social Media Icons */
 .fa-facebook {
-    background-color: #3B5998;
+    background-color: #3B5998; /* Facebook color */
 }
 
 .fa-google {
-    background-color: #e54545;
+    background-color: #e54545; /* Google color */
 }
 
 .fa-linkedin {
-    background-color: #007bb5;
+    background-color: #007bb5; /* LinkedIn color */
 }
 
 .fa-instagram {
-    background-color: #E4405F;
+    background-color: #E4405F; /* Instagram color */
 }
 
 /* Fade effect on hover for social media icons */
