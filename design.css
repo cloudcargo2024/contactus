@@ -1,3 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Background color for better visibility */
+}
+
 .btn {
     position: fixed;
     top: 0;
@@ -16,43 +27,9 @@
     color: #f5f5f5;
     cursor: pointer;
     outline: none;
+    z-index: 1;
 }
 
-.btn:hover {
-    box-shadow: 0 0 20px 0px #201E43;
-}
-
-/* Icon inside Button */
-.btn .icon {
-    position: absolute;
-    width: 70px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-}
-
-.btn:hover .icon {
-    width: 175px;
-}
-
-/* Text inside Button */
-.btn .text {
-    transform: translateX(100px);
-    transition: all 0.5s;
-}
-
-.btn:hover .text {
-    opacity: 0;
-}
-
-/* Button Active State */
-.btn:active .icon {
-    transform: scale(0.85);
-}
-
-/* Panel Styles */
 .panel {
     padding: 0 18px;
     background-color: #201E43;
@@ -63,54 +40,46 @@
     transition: max-height 0.2s ease-out;
 }
 
-/* Background Image for Body */
-body {
-    background-image: url('4k-mountain-514o15v7mw0ycwpg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-/* Fixed and Centered Social Media Icons */
 .social-icons {
-    position: fixed; /* Fixes the icons to the viewport */
-    top: 50%; /* Positions the icons vertically in the middle */
-    left: 50%; /* Positions the icons horizontally in the middle */
-    transform: translate(-50%, -50%); /* Centers the icons exactly */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    gap: 30px; /* Space between the icons */
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    text-align: center;
+}
+
+.social-icons p {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .social-icons a {
-    width: 90px; /* Circle size */
-    height: 90px; /* Circle size */
-    border-radius: 50%; /* Makes the container a circle */
+    text-decoration: none;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-size: 36px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px; /* Larger icon size */
-    text-decoration: none;
-    color: white;
-    transition: opacity 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
-    z-index: 2;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
 }
+
+.social-icons a.fa-facebook { background-color: #3B5998; }
+.social-icons a.fa-linkedin { background-color: #007bb5; }
+.social-icons a.fa-instagram { background-color: #e57368; }
+.social-icons a.fa-google { background-color: #db4437; }
 
 .social-icons a:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background-color: #3B5998; /* Facebook color */
-}
-
-.fa-google {
-  background-color: #e54545;
-}
-
-.fa-linkedin {
-    background-color: #007bb5; /* LinkedIn color */
-}
-.fa-instagram {
-    background-color: #E4405F; /* Instagram color */
+    opacity: 0.8;
 }
