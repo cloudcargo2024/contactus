@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudCargo</title>
-    <!-- Link to Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    <header>
-        <h2>
-            <button class="btn">
-                <span class="icon">
-                    <svg viewBox="0 0 175 80" width="40" height="40">
-                        <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                        <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                        <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                    </svg>
-                </span>
-                <span class="text">CloudCargo</span>
-            </button>
-        </h2>
-    </header>
+    <h2>
+        <button class="btn">
+            <span class="icon">
+                <svg viewBox="0 0 175 80" width="40" height="40">
+                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                </svg>
+            </span>
+            <span class="text">CloudCargo</span>
+        </button>
+    </h2>
 
     <div class="panel">
+        <p>-</p>
         <p><a href="https://cloudcargo2024.github.io/web/">Main page</a></p>
         <p><a href="https://cloudcargo2024.github.io/login/">Login</a></p>
         <p><a href="https://cloudcargo2024.github.io/products/">Products</a></p>
@@ -38,14 +35,12 @@
 
         btn.addEventListener('click', function() {
             this.classList.toggle("active");
-            panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
         });
     </script>
-
-    <ul class="social-icons">
-        <li><a href="https://www.google.com/" class="instagram"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.google.com/" class="facebook"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="https://www.google.com/" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
-    </ul>
 </body>
 </html>
