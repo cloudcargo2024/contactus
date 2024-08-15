@@ -73,20 +73,18 @@
 }
 
 .social-icons a {
-    padding: 20px;
-    width: 90px; /* Increased circle size */
-    height: 90px; /* Increased circle size */
-    text-align: center;
-    text-decoration: none;
-    margin: 10px;
-    border-radius: 50%;
+    width: 90px; /* Circle size */
+    height: 90px; /* Circle size */
+    border-radius: 50%; /* Makes the container a circle */
+    background-color: #3B5998; /* Default background color */
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
     font-size: 40px; /* Larger icon size */
     color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
 }
 
 .social-icons a:hover {
@@ -94,13 +92,13 @@
 }
 
 .fa-facebook {
-    background-color: #3B5998;
+    background-color: #3B5998; /* Facebook color */
 }
 
 .fa-linkedin {
-    background-color: #007bb5;
+    background-color: #007bb5; /* LinkedIn color */
 }
 
 .fa-instagram {
-    background-color: #E4405F;
+    background-color: #E4405F; /* Instagram color */
 }
