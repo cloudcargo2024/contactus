@@ -116,8 +116,8 @@ body {
 }
 .social-container {
     position: fixed;
-    bottom: 200px; /* Adjust as needed */
-    left: 50%; /* Center horizontally */
+    bottom: 300px; /* Adjust as needed */
+    left: 70%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@ body {
 /* Text above the icons */
 .social-text {
     color: white;
-    font-size: 20px; /* Adjust size as needed */
+    font-size: 10px; /* Adjust size as needed */
     text-align: center;
     margin-bottom: 20px; /* Space between text and icons */
 }
