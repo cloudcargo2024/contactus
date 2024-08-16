@@ -56,7 +56,7 @@
 
 /* Panel Styles */
 .panel {
-    padding: 0 18px;
+    padding: 20px 18px; /* Adjusted padding */
     background-color: #201E43; /* Original panel color */
     color: white;
     font-family: Verdana, Tahoma, sans-serif;
@@ -69,6 +69,7 @@
     width: calc(100% - 10px); /* Adjust for 5px margin on both sides */
     z-index: 5; /* Above social icons and button */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional shadow for panel */
+    box-sizing: border-box; /* Include padding in width/height calculations */
 }
 
 /* Background Image for Body */
