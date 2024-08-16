@@ -60,7 +60,7 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   position: fixed;
-  top: 2vh; /* Below the button bar */
+  top: 5vh; /* Below the button bar */
   left: 0;
   right: 0; /* Full width of the screen minus margins */
   width: calc(100% - 2rem); /* Adjust for margin */
