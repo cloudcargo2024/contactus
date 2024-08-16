@@ -60,10 +60,10 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     position: fixed;
-    top: 0vh /* Below the button */
-    left: 0;
-    width: calc(100% - 1rem); /* Adjust for margin */
-    margin: 0.5rem; /* Responsive margin */
+    top: 10vh; /* Below the button */
+    left: 1rem; /* Left margin */
+    right: 1rem; /* Right margin */
+    width: calc(100% - 2rem); /* Adjusted width for margin on both sides */
     z-index: 4;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
