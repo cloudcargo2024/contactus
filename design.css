@@ -140,7 +140,7 @@ body {
 
 @media (max-width: 768px) {
     .panel{
-        top: 8vh;
+        top: 20vh;
     }
     .social-text {
         font-size: 30px;
@@ -154,7 +154,7 @@ body {
 
 @media (max-width: 480px) {
     .panel{
-        top: 10vh;
+        top: 5vh;
     }
     .btn {
         font-size: 20px;
