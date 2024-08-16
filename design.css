@@ -144,6 +144,9 @@ body {
       font-size: 25px;
       height: 60px;
   }
+  .panel {
+      top: 1vh;
+  }
   .social-text {
       font-size: 30px;
   }
@@ -160,7 +163,7 @@ body {
       height: 50px;
   }
   .panel {
-      top: 1.5vh;
+      top: 2.1vh;
   }
   .social-text {
       font-size: 25px;
