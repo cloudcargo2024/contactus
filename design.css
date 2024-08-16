@@ -60,7 +60,7 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     position: fixed;
-    top: 10vh; /* Below the button */
+    top: 0vh /* Below the button */
     left: 0;
     width: calc(100% - 1rem); /* Adjust for margin */
     margin: 0.5rem; /* Responsive margin */
