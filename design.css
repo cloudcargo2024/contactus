@@ -3,11 +3,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 10vh; /* Height relative to viewport height */
     border: none;
     margin: 0;
     transition: all 0.5s ease-in-out;
-    font-size: 30px;
+    font-size: 2rem; /* Responsive font size */
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: 600;
     display: flex;
@@ -23,11 +23,10 @@
     box-shadow: 0 0 20px 0px #201E43;
 }
 
-/* Icon inside Button */
 .btn .icon {
     position: absolute;
-    width: 70px;
-    height: 40px;
+    width: 10vw; /* Width relative to viewport width */
+    height: 4vh; /* Height relative to viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,12 +35,11 @@
 }
 
 .btn:hover .icon {
-    width: 175px;
+    width: 25vw; /* Responsive width on hover */
 }
 
-/* Text inside Button */
 .btn .text {
-    transform: translateX(100px);
+    transform: translateX(10vw); /* Responsive translation */
     transition: all 0.5s;
 }
 
@@ -49,27 +47,26 @@
     opacity: 0;
 }
 
-/* Button Active State */
 .btn:active .icon {
     transform: scale(0.85);
 }
 
-/* Panel Styles */
 .panel {
-    padding: 0px 18px; /* Adjusted padding */
-    background-color: #201E43; /* Original panel color */
+    padding: 1rem; /* Responsive padding */
+    background-color: #201E43;
     color: white;
     font-family: Verdana, Tahoma, sans-serif;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     position: fixed;
-    top: 70px; /* Below the button */
+    top: 10vh; /* Below the button */
     left: 0;
-    width: calc(100% - 10px); /* Adjust for 5px margin on both sides */
-    margin: 5px; /* 5px margin around the panel */
-    z-index: 5; /* Above social icons and button */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional shadow for panel */
+    width: calc(100% - 1rem); /* Adjust for margin */
+    margin: 0.5rem; /* Responsive margin */
+    z-index: 5;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 /* Background Image for Body */
@@ -83,64 +80,91 @@ body {
 /* Container for social media icons and text */
 .social-container {
     position: fixed;
-    bottom: 200px; /* Adjust as needed */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    bottom: 20vh; /* Adjust as needed, responsive to viewport height */
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 3; /* Ensure it's below the panel */
+    z-index: 3;
 }
 
-/* Text above the icons */
 .social-text {
     color: white;
-    font-size: 70px; /* Adjust size as needed */
+    font-size: 4rem; /* Responsive font size */
     text-align: center;
-    margin-bottom: 35px; /* Space between text and icons */
-    z-index: 4; /* Above social icons but below panel */
+    margin-bottom: 2rem; /* Responsive margin */
+    z-index: 4;
 }
 
-/* Container for social media icons arranged horizontally */
 .social-icons {
     display: flex;
-    gap: 20px; /* Space between icons */
-    z-index: 2; /* Below text and panel */
+    gap: 2rem; /* Responsive gap */
+    z-index: 2;
 }
 
-/* Style for individual social media icons */
 .social-icons a {
-    width: 100px; /* Circle size */
-    height: 100px; /* Circle size */
-    border-radius: 50%; /* Makes the container a circle */
+    width: 10vw; /* Responsive circle size */
+    height: 10vw; /* Responsive circle size */
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px; /* Icon size */
+    font-size: 3rem; /* Responsive icon size */
     text-decoration: none;
     color: white;
     transition: opacity 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around icons */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Background Colors for Social Media Icons */
 .fa-facebook {
-    background-color: #3B5998; /* Facebook color */
+    background-color: #3B5998;
 }
 
 .fa-google {
-    background-color: #e54545; /* Google color */
+    background-color: #e54545;
 }
 
 .fa-linkedin {
-    background-color: #007bb5; /* LinkedIn color */
+    background-color: #007bb5;
 }
 
 .fa-instagram {
-    background-color: #E4405F; /* Instagram color */
+    background-color: #E4405F;
 }
 
-/* Fade effect on hover for social media icons */
 .social-icons a:hover {
     opacity: 0.7;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .btn {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .social-text {
+        font-size: 3rem; /* Smaller text */
+    }
+
+    .social-icons a {
+        width: 15vw; /* Larger icons */
+        height: 15vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 1.2rem; /* Even smaller font size */
+    }
+
+    .social-text {
+        font-size: 2.5rem; /* Smaller text */
+    }
+
+    .social-icons a {
+        width: 20vw; /* Even larger icons */
+        height: 20vw;
+    }
 }
