@@ -56,7 +56,7 @@
 
 /* Panel Styles */
 .panel {
-    padding: 20px 18px; /* Adjusted padding */
+    padding: 0px 18px; /* Adjusted padding */
     background-color: #201E43; /* Original panel color */
     color: white;
     font-family: Verdana, Tahoma, sans-serif;
@@ -67,9 +67,9 @@
     top: 70px; /* Below the button */
     left: 0;
     width: calc(100% - 10px); /* Adjust for 5px margin on both sides */
+    margin: 5px; /* 5px margin around the panel */
     z-index: 5; /* Above social icons and button */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional shadow for panel */
-    box-sizing: border-box; /* Include padding in width/height calculations */
 }
 
 /* Background Image for Body */
