@@ -138,33 +138,35 @@ body {
     opacity: 0.7;
 }
 
-/* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
     .btn {
-        font-size: 1.5rem; /* Smaller font size */
+        font-size: 25px;
+        height: 60px;
     }
-
     .social-text {
-        font-size: 3rem; /* Smaller text */
+        font-size: 30px;
     }
-
     .social-icons a {
-        width: 15vw; /* Larger icons */
-        height: 15vw;
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .btn {
-        font-size: 1.2rem; /* Even smaller font size */
+        font-size: 20px;
+        height: 50px;
     }
-
     .social-text {
-        font-size: 2.5rem; /* Smaller text */
+        font-size: 25px;
     }
-
     .social-icons a {
-        width: 20vw; /* Even larger icons */
-        height: 20vw;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .social-container {
+        bottom: 80px;
     }
 }
